@@ -14,7 +14,11 @@
 - Python 3.10+
 - `pip`
 
-## Установка
+## Установка и запуск
+
+### Linux
+
+Подходит для CachyOS, Arch Linux, Ubuntu и других дистрибутивов.
 
 Создайте и активируйте виртуальное окружение:
 
@@ -23,17 +27,32 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-Установите зависимости:
+Установите зависимости и запустите программу:
 
 ```bash
 pip install -r requirements.txt
+python main.py
 ```
 
-## Запуск
+### Windows
 
-Запуск приложения:
+Откройте `PowerShell` или `cmd` в папке проекта.
 
-```bash
+Для `PowerShell`:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python main.py
+```
+
+Для `cmd`:
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
 python main.py
 ```
 
